@@ -1,0 +1,11 @@
+Thread interruption usually needs to be called on application exit.
+
+
+Thread interruption - is a recommendation for the thread to stop (neither stops, nor pauses)
+Thread has flag - is interrupted
+
+.inputerrupt() set this flag to true
+
+If thread is "sleeping" or "joining" for someone, InterruptedException will be thrown,
+but isInterrupted flag would not be set to TRUE -> manual thread interruption inside.
+
